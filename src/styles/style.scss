@@ -1,0 +1,63 @@
+$bcgc:#eef8f6;
+
+body {
+    box-sizing: border-box;
+    padding: 100px;
+    overflow: hidden;
+    .content {
+        background-color: $bcgc;
+        height: 80vh;
+        width: 100%;
+    }
+    .menu{
+        width: 80%;
+        margin:auto;
+        display: flex;
+        &_logo{
+            width:200px;
+            height: 60px;
+            border:solid 2px black;
+            text-align: center;
+            font-size: 36px;
+            padding-top:20px;
+            margin-top:-40px;
+            margin-left: -120px;
+            
+        }
+        &_card{
+            flex: 1;
+            text-align: center;
+            margin-top: 100px;
+            color: darken($bcgc,50%);
+            &-acti{
+                color: black;
+                text-decoration: underline;
+                text-underline-position:under;
+                cursor: pointer;
+            }
+        }
+    }
+    .drinks{
+        margin:auto;
+        width: 70%;
+        margin-left: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        &_drink{
+            box-sizing: border-box;
+            padding-top:100px;
+            flex-wrap: wrap;
+            display: block;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            margin:40px;
+            color: white;
+            font-size: 34px;
+            line-height: 40px;
+            font-weight: bold;
+            background-image: '/src/img/bijou.jpg';
+        }
+    }
+    
+}
